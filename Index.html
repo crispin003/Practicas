@@ -9,7 +9,47 @@
 </head>
 <body>
     <h1>Prueba para saber si esta funcionando el css</h1>
+    
+    
+    
+    <script type="text/javascript">
+        /*
+        ///*********** Creación de arreglos *******\\\\
+        var arreglo = new Array();
+        arreglo.push("hola mundo");
+        arreglo.push(3);
+        console.log("salio "+arreglo[1]);
+        console.log("el tamaño del arreglo es: "+arreglo.length);
+        */
+       
 
 
+        /*
+        ///*********** Creación de clases *******\\\\
+        */
+        //declaracion de los objetos
+        var gatoUno = new Gato('carlota',2);        
+        var gatoDos = new Gato('peluza',3);
+
+        //creacion de las clases
+        function Gato (nombre,edad){
+            //atributos
+            this.nombre = nombre;
+            this.edad = edad;
+            //funciones
+            this.maullar = function(){
+                alert("el gato "+this.nombre+" hace miawwwww")
+            }
+            this.correr = function(){
+                alert("el gato "+this.nombre+" esta corriendo")
+            }
+        }
+
+        //finalizacion de la instancia de objetos 
+        alert("la edad de "+gatoUno.nombre+" es "+gatoUno.edad);
+        alert("la edad de "+gatoDos.nombre+" es "+gatoDos.edad);
+        gatoUno.maullar();
+        gatoDos.correr();
+</script>
 </body>
 </html>
